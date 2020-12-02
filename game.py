@@ -218,10 +218,7 @@ def reset_all():
     if i == 1:
         pontuacao_total = []
     pontuacao_total.append(collected_itens['coin'])
-    if i == 3:
-        i = 1
-    else:
-        i += 1
+    i = (i%3) + 1
 
     print(i)
     global king 
